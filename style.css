@@ -340,3 +340,43 @@ footer {
   width: fit-content;
   margin: 10px auto 0;
 }
+
+.form-message {
+  margin-top: 20px;
+  color: #c89b3c;
+  font-weight: bold;
+  display: none;
+}
+
+.form-message.show {
+  display: block;
+}
+
+.thank-you-page {
+  min-height: 70vh;
+  background: var(--light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 7%;
+}
+
+.thank-you-box {
+  max-width: 760px;
+  background: var(--white);
+  padding: 60px;
+  text-align: center;
+  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.08);
+  border-top: 5px solid var(--gold);
+}
+
+.thank-you-box h2 {
+  color: var(--navy);
+  font-size: 42px;
+  margin-bottom: 20px;
+}
+
+.thank-you-box p {
+  color: var(--muted);
+  margin-bottom: 30px;
+}

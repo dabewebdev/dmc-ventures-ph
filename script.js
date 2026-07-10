@@ -1,12 +1,10 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const contactForm = document.getElementById("contactForm");
+  const menuToggle = document.getElementById("menuToggle");
+  const navMenu = document.getElementById("navMenu");
 
-  if (contactForm) {
-    contactForm.addEventListener("submit", function (event) {
-      event.preventDefault();
-
-      contactForm.reset();
-      window.location.href = "thank-you.html";
+  if (menuToggle && navMenu) {
+    menuToggle.addEventListener("click", function () {
+      navMenu.classList.toggle("active");
     });
   }
 });

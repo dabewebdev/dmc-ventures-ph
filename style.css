@@ -579,3 +579,44 @@ footer {
     grid-template-columns: 1fr;
   }
 }
+
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: var(--navy);
+  font-size: 30px;
+  cursor: pointer;
+}
+
+@media (max-width: 900px) {
+  .navbar {
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  nav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: var(--white);
+    padding: 20px 7%;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
+  }
+
+  nav.active {
+    display: grid;
+    gap: 14px;
+  }
+
+  nav a {
+    margin: 0;
+  }
+}
